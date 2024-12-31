@@ -11,7 +11,6 @@ class Bank:
 
 
     def deposit(self):
-        lock.acquire()
         for i in range(100):
             dep_amount = random.randint(50, 500)
             self.balance += dep_amount
